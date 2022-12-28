@@ -1,3 +1,56 @@
-.titulomeme {color:blue;}
+.titulomeme {color:rgba(0, 208, 255, 0.492);
+font-size: 45px;
+text-align: center;}
 
-.tituloelegir {color:red}
+
+
+.inputmeme, .tituloelegir { color: rgba(15, 157, 157, 0.355);}
+
+.textomeme {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+
+}
+
+.eleccionmeme 
+{  display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+   
+  
+}
+#exportarimg {
+    width: 64vh;
+}
+
+ figure {    margin-inline-start: 0px;}
+.foto  {
+    width: 200px;
+    height: 300px;
+  margin: auto;
+   
+} 
+#exportarimg section {
+    height: 48vh;
+}
+
+#exportarimg img {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+#acaVaTexto {
+    font-size: 1.8rem;
+    font-weight: 450;
+    line-height: 1.8rem;
+    width: 64vh;
+    word-break: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+
+}

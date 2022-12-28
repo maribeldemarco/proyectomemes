@@ -1,10 +1,14 @@
 
 import React, {useState} from 'react';
 import html2canvas from 'html2canvas';
+import { useParrafo } from './Textodelmeme';
 
 
 const Memeimg =() =>
-{    const [imgmemes,setImgmemes]= useState(1);
+{   const textomemes = useParrafo();
+    // document.getElementById("acaVaTexto").innerHTML={textomemes};
+    
+    const [imgmemes,setImgmemes]= useState(1);
     // las funciones las llamo arriba del return
 
     const seleccionarlaimg =(e)=>
@@ -31,26 +35,28 @@ const exportar =(e)=>
 
 
     return (
-
-<div className="">
+        
+<div className="eleccionmeme">
 <h4 className="tituloelegir"> Elegi un meme</h4>
 <select onChange={seleccionarlaimg}  className="opciones" name="img"> 
 
     <option value={1}>
-meme 1
-    </option>
+Gato    </option>
     <option value={2}>
-Meme 2
+Perro
     </option>
     <option value={3}>
-Meme 3
+Loro
     </option>
 </select>
 
-<figure className="" id="exportarimg">
-    <p></p>
-<img src={require (`../imgs/${imgmemes}.jpg`)}/>
 
+
+<figure className="" id="exportarimg">
+    <p id="acaVaTexto">{textomemes}</p>
+    <section >
+    <img  className="foto" src={require (`../imgs/${imgmemes}.jpg`)} />
+    </section>
 
 
 </figure>
